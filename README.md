@@ -21,3 +21,8 @@ I document real-world engineering judgment: what was unclear, what assumptions w
 - Designed Web ↔ Runtime Agent contract for time-sensitive popup triggers  
 - Unified business-day logic across systems to prevent off-by-one inconsistencies  
 - Stabilized cross-system runtime behavior through iterative debugging and logging
+
+3) **LLM Tool Reliability Validation in Structured Systems**
+- Designed hypothesis-driven experiments to isolate schema effects (name vs description vs enum)
+- Identified “correct tool, incomplete parameters” failure mode
+- Building guardrails for reliable SQL mapping in policy-sensitive environments
