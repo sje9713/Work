@@ -1,1 +1,16 @@
-# Work
+# Workflow Systems Case Studies (No Code)
+
+This repository contains short, anonymized case studies describing how I structure requirements, design workflow logic, and validate production behavior in policy-constrained environments.
+
+- No proprietary code
+- Focus on decision-making, constraints, edge cases, and operational outcomes
+
+## Why this exists
+I tend to build systems in ambiguous, constraint-heavy contexts (policy, multi-role workflows, structured data).  
+I document real-world engineering judgment: what was unclear, what assumptions were made explicit, how safety rails were designed, and how validation refined the final behavior.
+
+## Case Studies
+1) **Leave Accrual Automation (Policy-Constrained Rule Engine + Data Reconciliation)**  
+   - Requirement restructuring under stakeholder changes  
+   - Safe automation with manual override coexistence  
+   - Dataset-level reconciliation and iterative refinement
