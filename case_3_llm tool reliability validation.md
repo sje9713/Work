@@ -85,7 +85,7 @@ Tracked:
 
 ---
 
-## Scope Transparency
+## Scope
 
 - Current validation based on limited internal test queries
 - Primary goal: establish evaluation framework before scaling
