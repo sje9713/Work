@@ -51,10 +51,10 @@ Separated into 3 layers:
 
 New structured entities:
 
-- telecommuting_plan
-- telecommuting_chkls
-- telecommuting_outcome
-- telecommuting_issue
+- remotework_plan
+- remotework_chkls
+- remotework_outcome
+- remotework_issue
 
 Design principles:
 
@@ -90,7 +90,7 @@ Observed issues during testing:
 - Popup disappearing after temporary-use window
 - Re-execution blocked by running process state
 
-Iteratively refined and aligned runtime behavior. :contentReference[oaicite:3]{index=3}
+Iteratively refined and aligned runtime behavior
 
 ---
 
