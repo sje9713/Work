@@ -7,10 +7,14 @@
 - Legacy manual allocation (spreadsheet-driven) already used in production
 - Need for production-safe automation that would not break existing operations
 
+---
+
 ## What I optimized for
 - Policy alignment and operational safety over raw feature velocity
 - Explicit assumption logging (do not hide uncertainty inside code)
 - Coexistence of automation + manual override
+
+---
 
 ## Requirement structuring
 - Consolidated multiple documents into 2 core tenure buckets:
@@ -24,6 +28,8 @@
   - termination/adjustment rule
 - Maintained “manual allocation” pathway during transition instead of forcing full replacement
 
+---
+
 ## System design decisions
 - Rule-based accrual model keyed by:
   - employment type
@@ -35,6 +41,8 @@
 - Designed automation to be idempotent and safe to re-run (with controlled deletion only when applicable)
 - Allowed manual adjustments to coexist with automation (operations must remain flexible)
 
+---
+
 ## Operational tooling & safety rails
 - Provided an operator-facing guide describing:
   - switching between manual (spreadsheet) vs auto-generation modes
@@ -43,12 +51,16 @@
   - exceptions requiring operator intervention (e.g., differing hire-date references, employment-type changes)
 - Added validation checks to block unsafe deletion scenarios related to downstream processes
 
+---
+
 ## Edge cases explicitly considered
 - Employment-type conversions and identifier/attribute transitions
 - Overlap between pre-generated records and auto-generation
 - Carry-over interacting with first-year accrual logic
 - Policy reference changes mid-implementation
 - Operational exceptions where automation should not decide (requires operator override)
+
+---
 
 ## Data reconciliation & iterative refinement
 - Ran dataset-level comparison:
@@ -58,6 +70,8 @@
   - refined the rule engine and assumptions
   - re-validated through another reconciliation cycle
 - The system converged through “data-informed policy alignment”, not blind implementation
+
+---
 
 ## Outcome
 - Standardized accrual logic across employment types
